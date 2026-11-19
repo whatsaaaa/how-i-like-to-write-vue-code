@@ -16,8 +16,8 @@ Node.js and pnpm, at the version `packageManager` names in `package.json`. Run `
 
 ## Layout
 
-- `src/`: the source
-- `tests/`: the unit tests
+- `app/`: the source, Nuxt's app directory
+- `public/`: the files served as they are, the favicon among them
 
 ## House rules
 

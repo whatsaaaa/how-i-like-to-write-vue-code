@@ -17,3 +17,10 @@ coverage
 *.tsbuildinfo
 *.tgz
 .eslintcache
+
+# Nuxt
+.nuxt
+.output
+.data
+.nitro
+.cache
