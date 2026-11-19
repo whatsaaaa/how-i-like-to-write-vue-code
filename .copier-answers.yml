@@ -1,0 +1,18 @@
+# Written by Copier: never edit this file by hand. `copier update` reads it.
+_commit: v1.4.0
+_src_path: https://github.com/whatsaaaa/template.git
+agents_md: true
+brand_kit: whatsaaaa
+browser_tests: false
+ci: false
+copyright_year: 2026
+description: A Nuxt app that shows how I like to write Vue code
+design_system: true
+framework: vue
+kind: app
+license: MIT
+name: how-i-like-to-write-vue-code
+stack: typescript
+starter: false
+visibility: public
+workspace: single

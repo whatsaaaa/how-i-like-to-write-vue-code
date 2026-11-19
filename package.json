@@ -1,17 +1,50 @@
 {
   "name": "how-i-like-to-write-vue-code",
-  "type": "module",
   "private": true,
+  "description": "A Nuxt app that shows how I like to write Vue code",
+  "license": "MIT",
+  "author": "Whatsaaaa",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run --passWithNoTests",
+    "type-check": "nuxt typecheck",
+    "lint": "run-s \"lint:*\"",
+    "lint:oxlint": "oxlint . --fix",
+    "lint:eslint": "eslint . --fix --cache",
+    "lint:css": "stylelint \"**/*.{css,vue}\" --fix --allow-empty-input",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
   "dependencies": {
+    "@whatsaaaa/design-system": "^0.8.2",
     "nuxt": "^4.6.4",
     "vue": "^3.5.45",
     "vue-router": "^5.4.0"
-  }
+  },
+  "devDependencies": {
+    "@whatsaaaa/eslint-config": "^1.0.0",
+    "@whatsaaaa/format-config": "^1.0.0",
+    "@whatsaaaa/oxlint-config": "^1.0.0",
+    "eslint": "^10.15.0",
+    "jiti": "^2.7.0",
+    "npm-run-all2": "^9.0.4",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "postcss-html": "^2.0.0",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0",
+    "stylelint-value-no-unknown-custom-properties": "^6.1.1",
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.0",
+    "vue-tsc": "^3.3.14"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  },
+  "packageManager": "pnpm@12.21.0"
 }

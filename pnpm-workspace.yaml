@@ -1,2 +1,11 @@
+# pnpm installs no package younger than a day (minimumReleaseAge). Our own packages are let in
+# as soon as they are published, so a project can take a release of them right away.
+minimumReleaseAgeExclude:
+  - '@whatsaaaa/*'
+
+# A dependency's install script runs only when allowBuilds lists it: true to run it, false to
+# skip it, each with a comment that says why.
 allowBuilds:
+  # esbuild's postinstall verifies its native binary at install time, which this project chose
+  # to run when the Nuxt app was set up
   esbuild: true
