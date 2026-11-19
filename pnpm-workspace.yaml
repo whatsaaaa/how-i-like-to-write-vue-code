@@ -6,6 +6,6 @@ minimumReleaseAgeExclude:
 # A dependency's install script runs only when allowBuilds lists it: true to run it, false to
 # skip it, each with a comment that says why.
 allowBuilds:
-  # esbuild's postinstall only checks the native binary that pnpm already installs through its
-  # optional platform package
-  esbuild: false
+  # esbuild's postinstall verifies its native binary at install time, which this project chose
+  # to run when the Nuxt app was set up
+  esbuild: true
