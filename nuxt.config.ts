@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+      // The theme-color tags come from the server only: server/plugins/theme-color.ts
       script: [{ innerHTML: colorModeInitScript }],
     },
   },
