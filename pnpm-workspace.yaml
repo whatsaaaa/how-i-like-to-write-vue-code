@@ -9,3 +9,6 @@ allowBuilds:
   # esbuild's postinstall verifies its native binary at install time, which this project chose
   # to run when the Nuxt app was set up
   esbuild: true
+  # vue-demi's postinstall only switches it to its Vue 2 build when it finds Vue 2. It ships the
+  # Vue 3 build this project uses, so there is nothing for the script to do
+  vue-demi: false
